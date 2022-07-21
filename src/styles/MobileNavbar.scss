@@ -1,3 +1,17 @@
+@import './Navbar.scss';
 .mobile-navbar{
+    margin-top: $navbarHeight;
     display: none;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 15em;
+    height: 100vh;
+    background-color: aqua;
+    transition: right 300ms;
+    z-index: 50;
+    &.active{
+        right: 0;
+    }
 }

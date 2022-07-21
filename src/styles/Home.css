@@ -73,4 +73,8 @@
 }
 .navbar__flex .menuBar-container {
   display: none;
-}/*# sourceMappingURL=Navbar.css.map */
+}
+
+.home {
+  margin-top: 4.3125em;
+}/*# sourceMappingURL=Home.css.map */

@@ -1,3 +1,9 @@
+@media (max-width: 1397px){
+    .advertisement__flex .ads-container{
+        flex: 1;
+        width: auto;
+    }
+}
 @media (max-width: 1300px){
     body{
         font-size: 15px;
@@ -8,17 +14,66 @@
         font-size: 14px;
     }
 }
+@media (max-width: 833px){
+    .navbar{
+        padding: 0 3.0625em;
+    }
+}
 @media (max-width: 800px){
     body{
         font-size: 13px;
+    }
+}
+@media (max-width: 665px){
+    .advertisement{
+        padding: 2em 2em 0 2em;
+        width: 100%;
+        height: auto;
+    }
+    .advertisement__flex{
+        flex-direction: column-reverse;
+    }
+    .green-hole{
+        display: none;
+    }
+    .advertisement__flex .ads-container{
+        height: 180px;
+    }
+    .advertisement__flex .ads-container .green-hole-mobile{
+        display: inline;
+    }
+    .ads-text h1, .ads-text p{
+        text-align: center;
+    }
+    .advertisement__flex .ads-text{
+        width: 100%;
+        h1, p{
+            text-align: center;
+        }
     }
 }
 @media (max-width: 550px){
     body{
         font-size: 12px;
     }
-    .navbar .navbar__flex .links-container, .navbar .navbar__flex .icons-container{
+    .navbar__flex .links-container, .navbar__flex .icons-container{
         display: none;
+    }
+    .navbar__flex .menuBar-container{
+        display: flex;
+    }
+    .mobile-navbar{
+        display: block;
+    }
+    .navbar-toggler{
+        display: block;
+        opacity: 0;
+        transition: 600ms;
+        pointer-events: none;
+        &.active{
+            opacity: 1;
+            pointer-events: all;
+        }
     }
 }
 @media (max-width: 300px){
@@ -29,6 +84,14 @@
 @media (max-width: 250px){
     body{
         font-size: 10px;
+    }
+    .mobile-navbar{
+        width: 100%;
+    }
+}
+@media (max-width: 250px){
+    .advertisement__flex .ads-container{
+        width: 100%;
     }
 }
 @media (max-width: 200px){

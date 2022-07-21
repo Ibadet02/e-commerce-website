@@ -7,7 +7,8 @@ interface Props {
 }
 export const MobileNavbar = ({isMobileNavOpen, setIsMobileNavOpen}: Props) => {
   return (
-    <div className='mobile-navbar'>
+    <div
+    className={`mobile-navbar ${isMobileNavOpen && 'active'}`}>
         <div className='mobile-navbar__flex'>
 
         </div>

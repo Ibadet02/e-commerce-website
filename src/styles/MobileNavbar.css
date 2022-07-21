@@ -1,3 +1,91 @@
-.mobile-navbar {
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 0 6.5em;
+  background-color: red;
+  overflow-x: visible;
+  z-index: 100;
+}
+.navbar__flex {
+  z-index: 110;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.3125em;
+  width: 100%;
+}
+.navbar__flex .logo-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.75em;
+}
+.navbar__flex .links-container {
+  display: flex;
+  gap: 0.625em;
+}
+.navbar__flex .icons-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+}
+.navbar__flex .icons-container__bag {
+  display: flex;
+}
+.navbar__flex .icons-container__search {
+  display: flex;
+  cursor: pointer;
+}
+.navbar__flex .icons-container .desktop-search {
+  transform: scale(1) translate(-100px, 100px);
+  transition: 300ms;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.navbar__flex .icons-container .desktop-search form {
+  position: relative;
+}
+.navbar__flex .icons-container .desktop-search form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.navbar__flex .icons-container .main-searchbar-enter {
+  transform: translateY(0) scale(0);
+}
+.navbar__flex .icons-container .main-searchbar-enter-active {
+  transform: translate(-100px, 100px) scale(1);
+}
+.navbar__flex .icons-container .main-searchbar-exit {
+  transform: scale(1);
+}
+.navbar__flex .icons-container .main-searchbar-exit-active {
+  transform: scale(0);
+}
+.navbar__flex .menuBar-container {
   display: none;
+}
+
+.mobile-navbar {
+  margin-top: 4.3125em;
+  display: none;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 15em;
+  height: 100vh;
+  background-color: aqua;
+  transition: right 300ms;
+  z-index: 50;
+}
+.mobile-navbar.active {
+  right: 0;
 }/*# sourceMappingURL=MobileNavbar.css.map */

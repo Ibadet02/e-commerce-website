@@ -1,9 +1,15 @@
 $navbarHeight: 4.3125em;
 .navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 0 6.5em;
     background-color: red;
+    overflow-x: visible;
+    z-index: 100;
     &__flex{
         display: flex;
         justify-content: space-between;
