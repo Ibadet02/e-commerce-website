@@ -1,0 +1,209 @@
+{
+    "data":
+        {
+            "oils": [
+                {
+                    "name": "oil1",
+                    "price": "10$",
+                    "img": "",
+                    "comment": "oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils",
+                    "bestSeller": false
+
+                },
+                {
+                    "name": "oil2",
+                    "price": "20$",
+                    "img": "",
+                    "comment": "oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils",
+                    "bestSeller": false
+
+                },
+                {
+                    "name": "oil3",
+                    "price": "30$",
+                    "img": "",
+                    "comment": "oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils",
+                    "bestSeller": true
+
+                },
+                {
+                    "name": "oil4",
+                    "price": "40$",
+                    "img": "",
+                    "comment": "oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils",
+                    "bestSeller": false
+
+                },
+                {
+                    "name": "oil5",
+                    "price": "50$",
+                    "img": "",
+                    "comment": "oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils",
+                    "bestSeller": true
+
+                },
+                {
+                    "name": "oil6",
+                    "price": "60$",
+                    "img": "",
+                    "comment": "oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils",
+                    "bestSeller": true
+
+                },
+                {
+                    "name": "oil7",
+                    "price": "70$",
+                    "img": "",
+                    "comment": "oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils",
+                    "bestSeller": false
+
+                }
+            ],
+            "cosmetics": [
+                {
+                    "name": "cosmetics1",
+                    "price": "10$",
+                    "img": "",
+                    "comment": "cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics",
+                    "bestSeller": true
+                },
+                {
+                    "name": "cosmetics2",
+                    "price": "20$",
+                    "img": "",
+                    "comment": "cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics",
+                    "bestSeller": false
+                },
+                {
+                    "name": "cosmetics3",
+                    "price": "30$",
+                    "img": "",
+                    "comment": "cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics",
+                    "bestSeller": true
+                },
+                {
+                    "name": "cosmetics4",
+                    "price": "40$",
+                    "img": "",
+                    "comment": "cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics",
+                    "bestSeller": true
+                },
+                {
+                    "name": "cosmetics5",
+                    "price": "50$",
+                    "img": "",
+                    "comment": "cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics",
+                    "bestSeller": false
+                },
+                {
+                    "name": "cosmetics6",
+                    "price": "60$",
+                    "img": "",
+                    "comment": "cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics",
+                    "bestSeller": true
+                },
+                {
+                    "name": "cosmetics7",
+                    "price": "70$",
+                    "img": "",
+                    "comment": "cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics",
+                    "bestSeller": false
+                }
+            ],
+            "diffusers": [
+                {
+                    "name": "diffuser1",
+                    "price": "10$",
+                    "img": "",
+                    "comment": "diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser",
+                    "bestSeller": false
+                },
+                {
+                    "name": "diffuser2",
+                    "price": "20$",
+                    "img": "",
+                    "comment": "diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser",
+                    "bestSeller": false
+                },
+                {
+                    "name": "diffuser3",
+                    "price": "30$",
+                    "img": "",
+                    "comment": "diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser",
+                    "bestSeller": true
+                },
+                {
+                    "name": "diffuser4",
+                    "price": "40$",
+                    "img": "",
+                    "comment": "diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser",
+                    "bestSeller": false
+                },
+                {
+                    "name": "diffuser5",
+                    "price": "50$",
+                    "img": "",
+                    "comment": "diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser",
+                    "bestSeller": true
+                },
+                {
+                    "name": "diffuser6",
+                    "price": "60$",
+                    "img": "",
+                    "comment": "diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser",
+                    "bestSeller": true
+                }
+            ],
+            "aromatherapy": [
+                {
+                    "name": "aromatherapy1",
+                    "price": "10$",
+                    "img": "",
+                    "comment": "aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy",
+                    "bestSeller": false
+                },
+                {
+                    "name": "aromatherapy2",
+                    "price": "20$",
+                    "img": "",
+                    "comment": "aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy",
+                    "bestSeller": true
+                },
+                {
+                    "name": "aromatherapy3",
+                    "price": "30$",
+                    "img": "",
+                    "comment": "aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy",
+                    "bestSeller": false
+                },
+                {
+                    "name": "aromatherapy4",
+                    "price": "40$",
+                    "img": "",
+                    "comment": "aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy",
+                    "bestSeller": true
+                },
+                {
+                    "name": "aromatherapy5",
+                    "price": "50$",
+                    "img": "",
+                    "comment": "aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy",
+                    "bestSeller": false
+                },
+                {
+                    "name": "aromatherapy6",
+                    "price": "60$",
+                    "img": "",
+                    "comment": "aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy",
+                    "bestSeller": true
+                },
+                {
+                    "name": "aromatherapy7",
+                    "price": "70$",
+                    "img": "",
+                    "comment": "aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy",
+                    "bestSeller": false
+                }
+            ]
+        }
+}

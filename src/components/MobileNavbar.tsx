@@ -1,11 +1,8 @@
 import React from 'react'
+import { MobileNavbarProps } from '../interfaces'
 import { NavLink } from 'react-router-dom'
 import '../styles/MobileNavbar.css'
-interface Props {
-    isMobileNavOpen: boolean
-    setIsMobileNavOpen: React.Dispatch<React.SetStateAction<boolean>>
-}
-export const MobileNavbar = ({isMobileNavOpen, setIsMobileNavOpen}: Props) => {
+export const MobileNavbar = ({isMobileNavOpen, setIsMobileNavOpen}: MobileNavbarProps) => {
   return (
     <div
     className={`mobile-navbar ${isMobileNavOpen && 'active'}`}>

@@ -1,13 +1,11 @@
 import React from 'react'
-
-export const ProductTypes: React.FC = () => {
+import { ProductTypesProps } from '../interfaces'
+export const ProductTypes = ({server, setServer}: ProductTypesProps) => {
   return (
     <section className='product-types'>
         <div className="product-types__flex">
-            <div className='box box-1'></div>
-            <div className='box box-2'></div>
-            <div className='box box-3'></div>
-            <div className='box box-4'></div>
+            <button>b1</button>
+            <button>b2</button>
         </div>
     </section>
   )
