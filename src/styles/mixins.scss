@@ -1,0 +1,16 @@
+@mixin defaulButton($color, $bgColor, $hoverColor, $hoverbgColor){
+    width: 17.125em;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background,color 300ms;
+    color: $color;
+    background-color: $bgColor;
+    text-decoration: none;
+    border-radius: 8px;
+    &:hover{
+        color: $hoverColor;
+        background-color: $hoverbgColor;
+    }
+}
