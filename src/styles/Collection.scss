@@ -1,0 +1,10 @@
+.collection{
+    background-image: url(../assets/images/Blob.svg);
+    background-repeat: no-repeat;
+    background-size: 46.0625em 29.375em;
+    background-position: top 0 left -40%;
+    &__flex{
+        display: flex;
+        align-items: center;
+    }
+}

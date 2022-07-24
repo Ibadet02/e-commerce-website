@@ -1,0 +1,56 @@
+.bestseller {
+  background-image: url(../assets/images/flower.svg);
+  background-repeat: no-repeat;
+  background-size: 26.9375em 38.0625em;
+  background-position: left -9.9% top 0;
+  margin-top: 8.75em;
+  width: 100%;
+  overflow-y: hidden;
+  height: 33.5em;
+  padding: 4em 3.8125em 0 0;
+}
+.bestseller__flex {
+  display: flex;
+  width: 100%;
+}
+.bestseller__flex--left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+}
+.bestseller__flex--left a {
+  width: 17.125em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background, color 300ms;
+  color: #fff;
+  background-color: #5FD788;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.bestseller__flex--left a:hover {
+  color: #5FD788;
+  background-color: #fff;
+}
+.bestseller__flex--right {
+  width: 55em;
+  overflow: hidden;
+}
+.bestseller__flex--right .bestseller-box {
+  height: 22.125em;
+  position: relative;
+}
+.bestseller__flex--right .bestseller-box--img {
+  width: 100%;
+  height: 100%;
+}
+.bestseller__flex--right .bestseller-box--blur {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}/*# sourceMappingURL=BestSeller.css.map */

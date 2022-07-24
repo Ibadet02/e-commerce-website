@@ -3,6 +3,7 @@ import { HomeProps } from '../interfaces'
 import { Advertisement } from '../components/Advertisement'
 import { ProductTypes } from '../components/ProductTypes'
 import { BestSeller } from '../components/BestSeller'
+import { Collection } from '../components/Collection'
 import '../styles/Home.scss'
 
 export const Home = ({server, setServer}:HomeProps) => {
@@ -19,13 +20,14 @@ export const Home = ({server, setServer}:HomeProps) => {
         setServer = {setServer}
         activeBox = {activeBox}
         setActiveBox = {setActiveBox}
-        handleTypeBoxClick = {(el, index)=>handleTypeBoxClick(el,index)}
+        handleTypeBoxClick = {(el:string, index:number)=>handleTypeBoxClick(el,index)}
         />
         <BestSeller
         server = {server}
         setServer = {setServer}
         activeBox = {activeBox}
         />
+        <Collection />
       </div>
     </section>
   )

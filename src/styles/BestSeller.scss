@@ -1,9 +1,14 @@
 @import './mixins.scss';
 .bestseller{
+    background-image: url(../assets/images/flower.svg);
+    background-repeat: no-repeat;
+    background-size: 26.9375em 38.0625em;
+    background-position: left -9.9% top 0;
     margin-top: 8.75em;
     width: 100%;
     overflow-y: hidden;
-    height: 33em;
+    height: 33.5em;
+    padding: 4em 3.8125em 0 0;
     &__flex{
         display: flex;
         width: 100%;
@@ -12,18 +17,18 @@
             // width: 40em;
             // flex-basis: 50%;
             flex: 1;
-            position: relative;
+            // position: relative;
             display: flex;
             flex-direction: column;
             gap: 18px;
             align-items: center;
             justify-content: center;
-            svg{
-                position: absolute;
-                left: 0;
-                top: 0;
-                z-index: -1;
-            }
+            // svg{
+            //     position: absolute;
+            //     left: 0;
+            //     top: 0;
+            //     z-index: -1;
+            // }
             h1{
 
             }
