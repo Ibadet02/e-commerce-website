@@ -21,7 +21,7 @@ $typeBoxSize: 17.0625em;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
             border-radius: 0px 20px;
             cursor: pointer;
-            transition: 500ms;
+            transition: background-color 500ms;
             &:hover{
                 background-color: rgba(95, 215, 136, .5);
             }
@@ -37,31 +37,5 @@ $typeBoxSize: 17.0625em;
                 }
             }
         }
-    }
-}
-.skeleton1, .skeleton2{
-    // opacity: .7;
-    // animation: skeleton-loading 4s linear backwards alternate;
-    // margin-top: 2px;
-}
-
-@keyframes skeleton-loading1 {
-    0%{
-        background-color: hsl(200, 20%, 70%);
-        color: transparent;
-    }
-    100%{
-        background-color: hsl(200, 20%, 95%);
-        color: black;
-    }
-}
-@keyframes skeleton-loading2 {
-    0%{
-        background-color: hsl(200, 20%, 70%);
-        color: transparent;
-    }
-    100%{
-        background-color: hsl(200, 20%, 95%);
-        color: '';
     }
 }

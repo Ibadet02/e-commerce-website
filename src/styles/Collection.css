@@ -1,10 +1,28 @@
 .collection {
-  background-image: url(../assets/images/Blob.svg);
-  background-repeat: no-repeat;
-  background-size: 46.0625em 29.375em;
-  background-position: top 0 left -40%;
+  background-image: url(../assets/images/creams.svg), url(../assets/images/Blob.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 30.5625em 25.25em, 46.0625em 29.375em;
+  background-position: top 2rem left 0, top 0 left -20em;
+  padding: 0 5.625em;
+  height: 30rem;
+  display: flex;
+  justify-content: right;
 }
 .collection__flex {
   display: flex;
-  align-items: center;
+}
+.collection__flex .explore {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-end;
+  justify-content: center;
+}
+.collection__flex .explore h2 {
+  width: 35.813rem;
+  text-align: right;
+}
+.collection__flex .explore p {
+  width: 23.375rem;
+  text-align: right;
 }/*# sourceMappingURL=Collection.css.map */

@@ -5,7 +5,7 @@
   }
 }
 @media (max-width: 1300px) {
-  body {
+  body, html {
     font-size: 15px;
   }
 }
@@ -36,7 +36,7 @@
   }
 }
 @media (max-width: 1050px) {
-  body {
+  body, html {
     font-size: 14px;
   }
 }
@@ -46,7 +46,7 @@
   }
 }
 @media (max-width: 800px) {
-  body {
+  body, html {
     font-size: 13px;
   }
 }
@@ -89,7 +89,7 @@
   }
 }
 @media (max-width: 550px) {
-  body {
+  body, html {
     font-size: 12px;
   }
   .navbar__flex .links-container, .navbar__flex .icons-container {
@@ -113,12 +113,12 @@
   }
 }
 @media (max-width: 300px) {
-  body {
+  body, html {
     font-size: 11px;
   }
 }
 @media (max-width: 250px) {
-  body {
+  body, html {
     font-size: 10px;
   }
   .mobile-navbar {
@@ -131,7 +131,7 @@
   }
 }
 @media (max-width: 200px) {
-  body {
+  body, html {
     font-size: 9px;
   }
 }/*# sourceMappingURL=responsive.css.map */

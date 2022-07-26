@@ -1,0 +1,20 @@
+.soaps__flex {
+  display: flex;
+}
+.soaps__flex__left {
+  flex: 1;
+  padding: 0 2.25rem 0 6.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #5FD788;
+}
+.soaps__flex__left h2 {
+  max-width: 32.6875rem;
+}
+.soaps__flex__right img {
+  width: 35.75rem;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=Soaps.css.map */

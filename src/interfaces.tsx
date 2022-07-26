@@ -1,3 +1,7 @@
+export interface animation {
+    text: {animation: string}
+    image: {animation: string}
+}
 export interface productData {
     name: string
     price: string
@@ -26,6 +30,8 @@ export interface BestSellerProps {
     server: serverData | any
     setServer: React.Dispatch<React.SetStateAction<serverData | null>>
     activeBox: number
+    componentType: string
+    style: animation
 }
 export interface MobileNavbarProps {
     isMobileNavOpen: boolean
