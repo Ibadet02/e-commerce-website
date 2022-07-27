@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@font-face {
+  font-family: SF-pro-rounded;
+  src: url(../assets/fonts/SF-pro-rounded.ttf);
+}
+@font-face {
+  font-family: SF-pro-display-regular;
+  src: url(../assets/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+@font-face {
+  font-family: SF-pro-display-bold;
+  src: url(../assets/fonts/SFPRODISPLAYBOLD.OTF);
+}
 .collection {
   background-image: url(../assets/images/creams.svg), url(../assets/images/Blob.svg);
   background-repeat: no-repeat, no-repeat;
@@ -7,6 +20,7 @@
   height: 30rem;
   display: flex;
   justify-content: right;
+  margin-top: 4rem;
 }
 .collection__flex {
   display: flex;
@@ -19,10 +33,41 @@
   justify-content: center;
 }
 .collection__flex .explore h2 {
-  width: 35.813rem;
+  max-width: 35.813rem;
+  font-family: "SF-pro-rounded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.125rem;
+  line-height: 107.9%;
   text-align: right;
+  letter-spacing: 0.01em;
+  color: #5FD788;
 }
 .collection__flex .explore p {
-  width: 23.375rem;
+  max-width: 23.375rem;
+  font-family: "SF-pro-display-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 140%;
   text-align: right;
+  color: #9CA3AF;
+}
+.collection__flex .explore a {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  width: 17.125em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background, color 300ms;
+  color: #fff;
+  background-color: #5FD788;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.collection__flex .explore a:hover {
+  color: #5FD788;
+  background-color: #fff;
 }/*# sourceMappingURL=Collection.css.map */

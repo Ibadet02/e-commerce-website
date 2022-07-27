@@ -1,4 +1,7 @@
+@import './mixins.scss';
 .soaps{
+    margin-top: 5rem;
+    height: 30rem;
     &__flex{
         display: flex;
         &__left{
@@ -6,18 +9,20 @@
             padding: 0 2.25rem 0 6.25rem;
             display: flex;
             flex-direction: column;
+            gap: 2.1875rem;
             justify-content: center;
             background-color: #5FD788;
             h2{
                 max-width: 32.6875rem;
+                @include soaps-header();
             }
             a{
-
+                @include defaulButton(#5FD788, #FFF, #FFF, #5FD788);
             }
         }
         &__right{
             img{
-                width: 35.75rem;
+                width: 100%;
                 height: 100%;
                 object-fit: cover;
             }

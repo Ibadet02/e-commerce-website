@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { ReactComponent as Flower } from '../assets/images/flower.svg';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import { FaCartPlus } from 'react-icons/fa';
@@ -28,12 +27,20 @@ export const BestSeller = ({server, setServer, activeBox, componentType, style}:
     className='bestseller'>
         <div className='bestseller__flex'>
             <div className='bestseller__flex--left'>
-                <h2>Bestsellers</h2>
-                <a href="#">SHOP ALL</a>
+                <div>
+                    <h2>
+                        {
+                            componentType === 'bestSeller' ?
+                            'Bestsellers' :
+                            'Trends'
+                        }
+                    </h2>
+                    <a href="#">SHOP ALL</a>
+                </div>
             </div>
             <div className='bestseller__flex--right'>
             <Swiper
-            spaceBetween={0}
+            spaceBetween={20}
             slidesPerView={slidesPerView}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}

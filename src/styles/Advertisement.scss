@@ -1,9 +1,14 @@
+@import '../styles/mixins.scss';
 .advertisement{
     padding-left: 6.25em;
     display: flex;
     justify-content: center;
     width: 100%;
     height: 42.125em;
+    background-image: url(../assets/images/green-hole.svg);
+    background-repeat: no-repeat;
+    background-position: right -58.125rem top -49.375rem;
+    background-size: 111rem auto;
     &__flex{
         width: 100%;
         display: flex;
@@ -11,16 +16,15 @@
         align-items: center;
         gap: 2em;
         .ads-text{
-            width: 25em;
+            max-width: 25em;
             display: flex;
             flex-direction: column;
+            gap: 2.375rem;
             h1{
-                font-weight: 600;
-                font-size: 6em;
+                @include advertisement-header();
             }
             p{
-                font-weight: 600;
-                font-size: 0.875em;
+                @include advertisement-text();
             }
         }
         .ads-container{
@@ -31,13 +35,10 @@
             height: 100%;
             overflow: visible;
             position: relative;
-            z-index: -1;
-            .green-hole{
-                width: 100%;
-                height: 100%;
-            }
-            .green-hole-mobile{
-                display: none;
+            // z-index: -1;
+            svg{
+                // display: flex;
+                // filter: drop-shadow(60px 68px 56px #373737);
             }
         }
     }

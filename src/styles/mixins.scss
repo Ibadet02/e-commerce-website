@@ -1,10 +1,13 @@
+@import '../styles/fonts.scss';
 @mixin defaulButton($color, $bgColor, $hoverColor, $hoverbgColor){
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
     width: 17.125em;
     height: 2.5em;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background,color 300ms;
+    transition: background, color 300ms;
     color: $color;
     background-color: $bgColor;
     text-decoration: none;
@@ -13,4 +16,85 @@
         color: $hoverColor;
         background-color: $hoverbgColor;
     }
+}
+@mixin navbar() {
+    font-family: 'SF-pro-display-bold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 135%;
+    color: #1F2937;
+    text-decoration: none;
+}
+@mixin advertisement-header() {
+    font-family: 'SF-pro-rounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 89.84%;
+    color: #5FD788;
+}
+@mixin advertisement-text() {
+    font-family: 'SF-pro-display-regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 140%;
+    color: #9CA3AF;
+    // border: 1px solid #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@mixin productTypes() {
+    font-family: 'SF-pro-display-bold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 140%;
+    text-align: center;
+    color: #5FD788;
+}
+@mixin collection-header() {
+    font-family: 'SF-pro-rounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.125rem;
+    line-height: 107.9%;
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: #5FD788;
+}
+@mixin collection-text() {
+    font-family: 'SF-pro-display-regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 140%;
+    text-align: right;
+    color: #9CA3AF;
+}
+@mixin bestseller-header() {
+    font-family: 'SF-pro-rounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.125rem;
+    line-height: 107.9%;
+    letter-spacing: 0.01em;
+    color: #5FD788;
+}
+@mixin bestseller-box($fontWeight, $fontSize, $color){
+    font-family: 'SF-pro-display-bold';
+    font-style: normal;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    line-height: 140%;
+    color: $color;
+}
+@mixin soaps-header() {
+    font-family: 'SF-pro-rounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.125rem;
+    line-height: 119.4%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
 }

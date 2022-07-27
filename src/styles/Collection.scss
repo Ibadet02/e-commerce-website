@@ -1,3 +1,4 @@
+@import '../styles/mixins.scss';
 .collection{
     background-image: url(../assets/images/creams.svg), url(../assets/images/Blob.svg);
     background-repeat: no-repeat, no-repeat;
@@ -7,6 +8,7 @@
     height: 30rem;
     display: flex;
     justify-content: right;
+    margin-top: 4rem;
     &__flex{
         display: flex;
         .explore{
@@ -16,12 +18,15 @@
             align-items:flex-end;
             justify-content: center;
             h2{
-                width: 35.813rem;
-                text-align: right;
+                max-width: 35.813rem;
+                @include collection-header();
             }
             p{
-                width: 23.375rem;
-                text-align: right;
+                max-width: 23.375rem;
+                @include collection-text();
+            }
+            a{
+                @include defaulButton(#fff, #5FD788, #5FD788, #fff);
             }
         }
     }

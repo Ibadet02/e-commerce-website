@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@font-face {
+  font-family: SF-pro-rounded;
+  src: url(../assets/fonts/SF-pro-rounded.ttf);
+}
+@font-face {
+  font-family: SF-pro-display-regular;
+  src: url(../assets/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+@font-face {
+  font-family: SF-pro-display-bold;
+  src: url(../assets/fonts/SFPRODISPLAYBOLD.OTF);
+}/*# sourceMappingURL=mixins.css.map */

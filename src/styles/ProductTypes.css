@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@font-face {
+  font-family: SF-pro-rounded;
+  src: url(../assets/fonts/SF-pro-rounded.ttf);
+}
+@font-face {
+  font-family: SF-pro-display-regular;
+  src: url(../assets/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+@font-face {
+  font-family: SF-pro-display-bold;
+  src: url(../assets/fonts/SFPRODISPLAYBOLD.OTF);
+}
 .product-types {
   margin-top: 9.1875em;
   width: 100%;
@@ -24,12 +37,6 @@
   cursor: pointer;
   transition: background-color 500ms;
 }
-.product-types__flex .type-box:hover {
-  background-color: rgba(95, 215, 136, 0.5);
-}
-.product-types__flex .type-box.active {
-  background-color: #5FD788;
-}
 .product-types__flex .type-box--img-div {
   width: 6.25em;
   height: 6.25em;
@@ -37,4 +44,25 @@
 .product-types__flex .type-box--img-div img {
   width: 100%;
   height: 100%;
+}
+.product-types__flex .type-box--name-div span {
+  font-family: "SF-pro-display-bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 140%;
+  text-align: center;
+  color: #5FD788;
+}
+.product-types__flex .type-box:hover {
+  background-color: rgba(95, 215, 136, 0.5);
+}
+.product-types__flex .type-box:hover .type-box--name-div span {
+  color: #fff;
+}
+.product-types__flex .type-box.active {
+  background-color: #5FD788;
+}
+.product-types__flex .type-box.active .type-box--name-div span {
+  color: #fff;
 }/*# sourceMappingURL=ProductTypes.css.map */
