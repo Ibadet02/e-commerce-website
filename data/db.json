@@ -8,8 +8,8 @@
                     "img": "",
                     "comment": "oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils",
                     "bestSeller": false,
-                    "trend": true
-
+                    "trend": true,
+                    "productId": "oil1"
                 },
                 {
                     "name": "oil2",
@@ -17,8 +17,8 @@
                     "img": "",
                     "comment": "oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils",
                     "bestSeller": false,
-                    "trend": true
-
+                    "trend": true,
+                    "productId": "oil2"
                 },
                 {
                     "name": "oil3",
@@ -26,8 +26,8 @@
                     "img": "",
                     "comment": "oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils",
                     "bestSeller": true,
-                    "trend": true
-
+                    "trend": true,
+                    "productId": "oil3"
                 },
                 {
                     "name": "oil4",
@@ -35,8 +35,8 @@
                     "img": "",
                     "comment": "oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils",
                     "bestSeller": false,
-                    "trend": true
-
+                    "trend": true,
+                    "productId": "oil4"
                 },
                 {
                     "name": "oil5",
@@ -44,8 +44,8 @@
                     "img": "",
                     "comment": "oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils",
                     "bestSeller": true,
-                    "trend": true
-
+                    "trend": true,
+                    "productId": "oil5"
                 },
                 {
                     "name": "oil6",
@@ -53,8 +53,8 @@
                     "img": "",
                     "comment": "oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils",
                     "bestSeller": true,
-                    "trend": true
-
+                    "trend": true,
+                    "productId": "oil6"
                 },
                 {
                     "name": "oil7",
@@ -62,8 +62,8 @@
                     "img": "",
                     "comment": "oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils oils",
                     "bestSeller": false,
-                    "trend": true
-
+                    "trend": true,
+                    "productId": "oil7"
                 }
             ],
             "cosmetics": [
@@ -73,7 +73,8 @@
                     "img": "",
                     "comment": "cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics",
                     "bestSeller": true,
-                    "trend": true
+                    "trend": true,
+                    "productId": "cosmetics1"
                 },
                 {
                     "name": "cosmetics2",
@@ -81,7 +82,8 @@
                     "img": "",
                     "comment": "cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics",
                     "bestSeller": false,
-                    "trend": true
+                    "trend": true,
+                    "productId": "cosmetics2"
                 },
                 {
                     "name": "cosmetics3",
@@ -89,7 +91,8 @@
                     "img": "",
                     "comment": "cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics",
                     "bestSeller": true,
-                    "trend": true
+                    "trend": true,
+                    "productId": "cosmetics3"
                 },
                 {
                     "name": "cosmetics4",
@@ -97,7 +100,8 @@
                     "img": "",
                     "comment": "cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics",
                     "bestSeller": true,
-                    "trend": true
+                    "trend": true,
+                    "productId": "cosmetics4"
                 },
                 {
                     "name": "cosmetics5",
@@ -105,7 +109,8 @@
                     "img": "",
                     "comment": "cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics",
                     "bestSeller": false,
-                    "trend": true
+                    "trend": true,
+                    "productId": "cosmetics5"
                 },
                 {
                     "name": "cosmetics6",
@@ -113,7 +118,8 @@
                     "img": "",
                     "comment": "cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics",
                     "bestSeller": true,
-                    "trend": true
+                    "trend": true,
+                    "productId": "cosmetics6"
                 },
                 {
                     "name": "cosmetics7",
@@ -121,7 +127,8 @@
                     "img": "",
                     "comment": "cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics cosmetics",
                     "bestSeller": false,
-                    "trend": true
+                    "trend": true,
+                    "productId": "cosmetics7"
                 }
             ],
             "diffusers": [
@@ -131,7 +138,8 @@
                     "img": "",
                     "comment": "diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser",
                     "bestSeller": false,
-                    "trend": true
+                    "trend": true,
+                    "productId": "diffuser1"
                 },
                 {
                     "name": "diffuser2",
@@ -139,7 +147,8 @@
                     "img": "",
                     "comment": "diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser",
                     "bestSeller": false,
-                    "trend": true
+                    "trend": true,
+                    "productId": "diffuser2"
                 },
                 {
                     "name": "diffuser3",
@@ -147,7 +156,8 @@
                     "img": "",
                     "comment": "diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser",
                     "bestSeller": true,
-                    "trend": true
+                    "trend": true,
+                    "productId": "diffuser3"
                 },
                 {
                     "name": "diffuser4",
@@ -155,7 +165,8 @@
                     "img": "",
                     "comment": "diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser",
                     "bestSeller": false,
-                    "trend": true
+                    "trend": true,
+                    "productId": "diffuser4"
                 },
                 {
                     "name": "diffuser5",
@@ -163,7 +174,8 @@
                     "img": "",
                     "comment": "diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser",
                     "bestSeller": true,
-                    "trend": true
+                    "trend": true,
+                    "productId": "diffuser5"
                 },
                 {
                     "name": "diffuser6",
@@ -171,7 +183,8 @@
                     "img": "",
                     "comment": "diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser diffuser",
                     "bestSeller": true,
-                    "trend": true
+                    "trend": true,
+                    "productId": "diffuser6"
                 }
             ],
             "aromatherapy": [
@@ -181,7 +194,8 @@
                     "img": "",
                     "comment": "aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy",
                     "bestSeller": false,
-                    "trend": true
+                    "trend": true,
+                    "productId": "aromatherapy1"
                 },
                 {
                     "name": "aromatherapy2",
@@ -189,7 +203,8 @@
                     "img": "",
                     "comment": "aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy",
                     "bestSeller": true,
-                    "trend": true
+                    "trend": true,
+                    "productId": "aromatherapy2"
                 },
                 {
                     "name": "aromatherapy3",
@@ -197,7 +212,8 @@
                     "img": "",
                     "comment": "aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy",
                     "bestSeller": false,
-                    "trend": true
+                    "trend": true,
+                    "productId": "aromatherapy3"
                 },
                 {
                     "name": "aromatherapy4",
@@ -205,7 +221,8 @@
                     "img": "",
                     "comment": "aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy",
                     "bestSeller": true,
-                    "trend": true
+                    "trend": true,
+                    "productId": "aromatherapy4"
                 },
                 {
                     "name": "aromatherapy5",
@@ -213,7 +230,8 @@
                     "img": "",
                     "comment": "aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy",
                     "bestSeller": false,
-                    "trend": true
+                    "trend": true,
+                    "productId": "aromatherapy5"
                 },
                 {
                     "name": "aromatherapy6",
@@ -221,7 +239,8 @@
                     "img": "",
                     "comment": "aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy",
                     "bestSeller": true,
-                    "trend": true
+                    "trend": true,
+                    "productId": "aromatherapy6"
                 },
                 {
                     "name": "aromatherapy7",
@@ -229,7 +248,8 @@
                     "img": "",
                     "comment": "aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy aromatherapy",
                     "bestSeller": false,
-                    "trend": true
+                    "trend": true,
+                    "productId": "aromatherapy7"
                 }
             ]
         }

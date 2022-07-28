@@ -118,6 +118,9 @@
     width: 22rem;
     height: auto;
   }
+  .product-types {
+    margin-top: 1rem;
+  }
 }
 @media (max-width: 833px) {
   .navbar {
@@ -127,6 +130,19 @@
 @media (max-width: 800px) {
   body, html {
     font-size: 13px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+  }
+  .footer--logo {
+    position: static;
+  }
+  .footer__flex .links-container {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 @media (max-width: 750px) {
@@ -172,8 +188,8 @@
   .advertisement__flex .ads-text h1, .advertisement__flex .ads-text p {
     text-align: center;
   }
-  .advertisement__flex {
-    flex-direction: column-reverse;
+  .product-types {
+    margin-top: 3rem;
   }
 }
 @media (max-width: 600px) {

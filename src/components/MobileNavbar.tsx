@@ -7,7 +7,7 @@ export const MobileNavbar = ({isMobileNavOpen, setIsMobileNavOpen}: MobileNavbar
     <div
     className={`mobile-navbar ${isMobileNavOpen && 'active'}`}>
         <div className='mobile-navbar__flex'>
-
+          
         </div>
     </div>
   )

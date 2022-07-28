@@ -21,7 +21,7 @@
   padding: 0 6.5em;
   background-color: #FFF;
   overflow-x: visible;
-  z-index: 100;
+  z-index: 50;
 }
 .navbar__flex {
   display: flex;
@@ -33,7 +33,7 @@
 .navbar__flex .logo-container a {
   display: flex;
   align-items: center;
-  gap: 0.75em;
+  gap: 0.75rem;
   font-family: "SF-pro-display-bold";
   font-style: normal;
   font-weight: 600;
@@ -103,4 +103,5 @@
 }
 .navbar__flex .menuBar-container {
   display: none;
+  cursor: pointer;
 }/*# sourceMappingURL=Navbar.css.map */

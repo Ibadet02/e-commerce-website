@@ -6,6 +6,7 @@ import { Navbar } from './components/Navbar';
 import { About } from './pages/About';
 import { Shop } from './pages/Shop';
 import { Contact } from './pages/Contact';
+import { Footer } from './pages/Footer';
 import './App.css';
 import './styles/responsive.css'
 const App: React.FC = () => {
@@ -26,6 +27,7 @@ const App: React.FC = () => {
         <Route path='/shop' element={<Shop />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   );
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import { ReactComponent as Creams } from '../assets/images/creams.svg';
 import '../styles/Collection.scss'
 export const Collection = () => {
   return (

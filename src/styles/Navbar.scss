@@ -10,7 +10,7 @@ $navbarHeight: 4.3125em;
     padding: 0 6.5em;
     background-color: #FFF;
     overflow-x: visible;
-    z-index: 100;
+    z-index: 50;
     &__flex{
         display: flex;
         justify-content: space-between;
@@ -21,7 +21,7 @@ $navbarHeight: 4.3125em;
             a{
                 display: flex;
                 align-items: center;
-                gap: 0.75em;
+                gap: 0.75rem;
                 @include navbar();
             }
         }
@@ -84,6 +84,7 @@ $navbarHeight: 4.3125em;
         }
         .menuBar-container{
             display: none;
+            cursor: pointer;
         }
     }
 }

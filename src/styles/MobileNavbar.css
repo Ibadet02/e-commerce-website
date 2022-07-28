@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@font-face {
+  font-family: SF-pro-rounded;
+  src: url(../assets/fonts/SF-pro-rounded.ttf);
+}
+@font-face {
+  font-family: SF-pro-display-regular;
+  src: url(../assets/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+@font-face {
+  font-family: SF-pro-display-bold;
+  src: url(../assets/fonts/SFPRODISPLAYBOLD.OTF);
+}
 .navbar {
   position: fixed;
   top: 0;
@@ -6,9 +19,9 @@
   display: flex;
   justify-content: center;
   padding: 0 6.5em;
-  background-color: red;
+  background-color: #FFF;
   overflow-x: visible;
-  z-index: 100;
+  z-index: 50;
 }
 .navbar__flex {
   display: flex;
@@ -20,12 +33,27 @@
 .navbar__flex .logo-container a {
   display: flex;
   align-items: center;
+  gap: 0.75rem;
+  font-family: "SF-pro-display-bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 135%;
+  color: #1F2937;
   text-decoration: none;
-  gap: 0.75em;
 }
 .navbar__flex .links-container {
   display: flex;
   gap: 0.625em;
+}
+.navbar__flex .links-container a {
+  font-family: "SF-pro-display-bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 135%;
+  color: #1F2937;
+  text-decoration: none;
 }
 .navbar__flex .icons-container {
   position: relative;
@@ -39,9 +67,11 @@
 .navbar__flex .icons-container__search {
   display: flex;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 .navbar__flex .icons-container .desktop-search {
-  transform: scale(1) translate(-100px, 100px);
+  transform: scale(1) translate(-500px, 50px);
   transition: 300ms;
   position: absolute;
   right: -100%;
@@ -63,7 +93,7 @@
   transform: translateY(0) scale(0);
 }
 .navbar__flex .icons-container .main-searchbar-enter-active {
-  transform: translate(-100px, 100px) scale(1);
+  transform: translate(-500px, 100px) scale(1);
 }
 .navbar__flex .icons-container .main-searchbar-exit {
   transform: scale(1);
@@ -86,7 +116,7 @@
   height: 100vh;
   background-color: aqua;
   transition: right 300ms;
-  z-index: 50;
+  z-index: 100;
 }
 .mobile-navbar.active {
   right: 0;

@@ -98,3 +98,11 @@
     letter-spacing: 0.01em;
     color: #FFFFFF;
 }
+@mixin footer-links($fontWeight, $color){
+    font-family: 'SF-pro-display-regular';
+    font-style: normal;
+    font-weight: $fontWeight;
+    font-size: 1em;
+    line-height: 135%;
+    color: $color;
+}

@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useId } from 'react'
 import { ProductTypesProps } from '../interfaces'
 import '../styles/ProductTypes.scss'
 export const ProductTypes = ({server, setServer, activeBox, setActiveBox, handleTypeBoxClick}: ProductTypesProps) => {
+  const id = useId()
+  const x = useId()
   return (
-    <section className='product-types'>
-        <div className="product-types__flex">
+    <section className='product-types' id={id}>
+        <div className="product-types__flex" id={x}>
           {
             Object.keys(server).map((el, index)=>{
               return (
