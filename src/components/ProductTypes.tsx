@@ -1,18 +1,16 @@
 import React, { useState, useId } from 'react'
 import { ProductTypesProps } from '../interfaces'
 import '../styles/ProductTypes.scss'
-export const ProductTypes = ({server, setServer, activeBox, setActiveBox, handleTypeBoxClick}: ProductTypesProps) => {
-  const id = useId()
-  const x = useId()
+export const ProductTypes = ({server, setServer, activeBox, setActiveBox, handleTypeBoxClick, darkMode}: ProductTypesProps) => {
   return (
-    <section className='product-types' id={id}>
-        <div className="product-types__flex" id={x}>
+    <section className={`product-types`}>
+        <div className="product-types__flex">
           {
             Object.keys(server).map((el, index)=>{
               return (
                 <div
                 key={index}
-                className={`type-box ${activeBox === index && 'active'}`}
+                className={`type-box ${darkMode && 'dark'} ${activeBox === index && 'active'}`}
                 onClick={()=>handleTypeBoxClick(el, index)}
                 >
                   <div className="type-box--img-div">

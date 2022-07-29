@@ -5,7 +5,7 @@ import { FaCartPlus } from 'react-icons/fa';
 import { BestSellerProps } from '../interfaces'
 import { productData } from '../interfaces'
 import '../styles/BestSeller.scss'
-export const BestSeller = ({server, setServer, activeBox, componentType, style}:BestSellerProps) => {
+export const BestSeller = ({server, setServer, activeBox, componentType, style, darkMode}:BestSellerProps) => {
     const [slidesPerView, setSlidesPerView] = useState<number>(2)
     useEffect(()=>{
         if(window.innerWidth<1245){
@@ -35,7 +35,7 @@ export const BestSeller = ({server, setServer, activeBox, componentType, style}:
                             'Trends'
                         }
                     </h2>
-                    <a href="#">SHOP ALL</a>
+                    <a className={`shop-all ${darkMode && 'dark'}`} href="#">SHOP ALL</a>
                 </div>
             </div>
             <div className='bestseller__flex--right'>

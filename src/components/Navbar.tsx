@@ -1,16 +1,17 @@
 import React, { useRef, useState } from 'react'
+import { NavbarProps } from '../interfaces'
 import { NavLink } from 'react-router-dom'
 import { MobileNavbar } from './MobileNavbar'
 import { CSSTransition } from 'react-transition-group'
 import { FaBars } from 'react-icons/fa';
 import { ReactComponent as Logo } from '../assets/images/logo.svg';
 import '../styles/Navbar.css'
-export const Navbar: React.FC = () => {
+export const Navbar = ({darkMode, setDarkMode}:NavbarProps) => {
     const [isMobileNavOpen, setIsMobileNavOpen] = useState<boolean>(false)
     const [isSearchbarOpen, setIsSearchbarOpen] = useState<boolean>(false)
   return (
     <>
-        <nav className='navbar'>
+        <nav className={`navbar ${darkMode && 'dark'}`}>
             <div className='navbar__flex'>
                 <div className="logo-container">
                     <NavLink to={'/'}>
@@ -51,15 +52,22 @@ export const Navbar: React.FC = () => {
                             </form>
                         </div>
                     </CSSTransition>
+                    <div
+                    onClick={()=>setDarkMode(!darkMode)}
+                    className={`toggle-dark ${darkMode && 'dark'}`}>
+                        <div className='toggle-dark--circle'></div>
+                    </div>
                 </div>
                 <div
                 onClick={()=>setIsMobileNavOpen(prev=>!prev)}
-                className='menuBar-container'>
+                className={`menuBar-container ${darkMode && 'dark'}`}>
                     <FaBars/>
                 </div>
             </div>
         </nav>
         <MobileNavbar
+        setDarkMode={setDarkMode}
+        darkMode = {darkMode}
         isMobileNavOpen = {isMobileNavOpen}
         setIsMobileNavOpen = {setIsMobileNavOpen}
         />

@@ -8,7 +8,7 @@ import { Collection } from '../components/Collection'
 import { Soaps } from '../components/Soaps'
 import '../styles/Home.scss'
 
-export const Home = ({server, setServer}:HomeProps) => {
+export const Home = ({server, setServer, darkMode}:HomeProps) => {
   const [style, setStyle] = useState<animation>({
     text: {animation: 'skeleton-loading1 2s linear backwards alternate'},
     image: {animation: 'skeleton-loading1 2s linear backwards alternate'},
@@ -25,10 +25,13 @@ export const Home = ({server, setServer}:HomeProps) => {
     })
   }
   return (
-    <section className='home'>
+    <section className={`home ${darkMode && 'dark'}`}>
       <div className="home__flex">
-        <Advertisement />
+        <Advertisement
+        darkMode = {darkMode}
+        />
         <ProductTypes
+        darkMode = {darkMode}
         server = {server}
         setServer = {setServer}
         activeBox = {activeBox}
@@ -36,15 +39,21 @@ export const Home = ({server, setServer}:HomeProps) => {
         handleTypeBoxClick = {(el:string, index:number)=>handleTypeBoxClick(el,index)}
         />
         <BestSeller
+        darkMode = {darkMode}
         server = {server}
         setServer = {setServer}
         activeBox = {activeBox}
         componentType = 'bestSeller'
         style = {style}
         />
-        <Collection />
-        <Soaps />
+        <Collection
+        darkMode = {darkMode}
+        />
+        <Soaps
+        darkMode = {darkMode}
+        />
         <BestSeller
+        darkMode = {darkMode}
         server = {server}
         setServer = {setServer}
         activeBox = {activeBox}

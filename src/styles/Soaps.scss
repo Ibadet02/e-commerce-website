@@ -1,4 +1,5 @@
 @import './mixins.scss';
+@import '../App.scss';
 .soaps{
     margin-top: 5rem;
     height: 30rem;
@@ -12,12 +13,24 @@
             gap: 2.1875rem;
             justify-content: center;
             background-color: #5FD788;
-            h2{
+            &--text{
                 max-width: 32.6875rem;
+                transition: $darkModeTransition;
                 @include soaps-header();
+                &.dark{
+                    color: $darkModeBGColor;
+                }
             }
-            a{
-                @include defaulButton(#5FD788, #FFF, #FFF, #5FD788);
+            &--link{
+                @include defaulButton(#5FD788, #FFF, #5FD788, #fff);
+                transition: $darkModeTransition;
+                &.dark{
+                    background-color: $darkModeBGColor;
+                    &:hover{
+                        background-color: #FFF;
+                        color: $darkModeBGColor;
+                    }
+                }
             }
         }
         &__right{

@@ -1,4 +1,5 @@
-@import '../styles/fonts.scss';
+@import './fonts.scss';
+@import '../App.scss';
 @mixin defaulButton($color, $bgColor, $hoverColor, $hoverbgColor){
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;

@@ -11,6 +11,48 @@
   font-family: SF-pro-display-bold;
   src: url(../assets/fonts/SFPRODISPLAYBOLD.OTF);
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.navbar-toggler {
+  transition: 600ms;
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.navbar-toggler {
+  transition: 600ms;
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 40;
+}
+
 .soaps {
   margin-top: 5rem;
   height: 30rem;
@@ -27,8 +69,9 @@
   justify-content: center;
   background-color: #5FD788;
 }
-.soaps__flex__left h2 {
+.soaps__flex__left--text {
   max-width: 32.6875rem;
+  transition: 500ms;
   font-family: "SF-pro-rounded";
   font-style: normal;
   font-weight: 600;
@@ -37,7 +80,10 @@
   letter-spacing: 0.01em;
   color: #FFFFFF;
 }
-.soaps__flex__left a {
+.soaps__flex__left--text.dark {
+  color: #1F2937;
+}
+.soaps__flex__left--link {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
   width: 17.125em;
@@ -50,10 +96,18 @@
   background-color: #FFF;
   text-decoration: none;
   border-radius: 8px;
+  transition: 500ms;
 }
-.soaps__flex__left a:hover {
-  color: #FFF;
-  background-color: #5FD788;
+.soaps__flex__left--link:hover {
+  color: #5FD788;
+  background-color: #fff;
+}
+.soaps__flex__left--link.dark {
+  background-color: #1F2937;
+}
+.soaps__flex__left--link.dark:hover {
+  background-color: #FFF;
+  color: #1F2937;
 }
 .soaps__flex__right img {
   width: 100%;

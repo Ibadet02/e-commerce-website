@@ -1,4 +1,9 @@
 @import './Navbar.scss';
+@import '../App.scss';
 .home{
     margin-top: $navbarHeight;
+    transition: $darkModeTransition;
+    &.dark{
+        background-color: $darkModeBGColor;
+    }
 }

@@ -1,10 +1,11 @@
 import React from 'react'
+import { FooterProps } from '../interfaces';
 import { NavLink } from 'react-router-dom';
 import { ReactComponent as Logo } from '../assets/images/logo.svg';
 import '../styles/Footer.css'
-export const Footer = () => {
+export const Footer = ({darkMode}:FooterProps) => {
   return (
-    <footer className='footer'>
+    <footer className={`footer ${darkMode && 'dark'}`}>
         <NavLink className='footer--logo' to={'/'}>
             <Logo />
             <strong>logo</strong>

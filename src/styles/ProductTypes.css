@@ -11,12 +11,55 @@
   font-family: SF-pro-display-bold;
   src: url(../assets/fonts/SFPRODISPLAYBOLD.OTF);
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.navbar-toggler {
+  transition: 600ms;
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.navbar-toggler {
+  transition: 600ms;
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 40;
+}
+
 .product-types {
   margin-top: 6rem;
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 0 6em;
+  transition: 500ms;
 }
 .product-types__flex {
   display: flex;
@@ -29,13 +72,17 @@
   height: 17.0625em;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
   background: #F9FAFB;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
   border-radius: 0px 20px;
   cursor: pointer;
-  transition: background-color 500ms;
+  transition: 500ms;
+}
+.product-types__flex .type-box.dark {
+  background-color: #1F2937;
 }
 .product-types__flex .type-box--img-div {
   width: 6.25em;

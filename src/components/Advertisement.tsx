@@ -1,9 +1,10 @@
 import React from 'react'
+import { AdvertisementProps } from '../interfaces';
 import { ReactComponent as Pharmacy } from '../assets/images/pharmacy.svg';
 import '../styles/Advertisement.css'
-export const Advertisement = () => {
+export const Advertisement = ({darkMode}:AdvertisementProps) => {
   return (
-    <section className='advertisement'>
+    <section className={`advertisement ${darkMode && 'dark'}`}>
         <div className="advertisement__flex">
             <div className='ads-text'>
                 <h1>Pear kiwi & Mint</h1>

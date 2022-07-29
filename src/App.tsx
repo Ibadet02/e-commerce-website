@@ -1,3 +1,4 @@
+import { useLocalStorage } from './localStorage/useLocalStorge';
 import { useEffect, useState } from 'react';
 import { Routes, Route } from'react-router-dom'
 import { serverData } from './interfaces';
@@ -10,6 +11,8 @@ import { Footer } from './pages/Footer';
 import './App.css';
 import './styles/responsive.css'
 const App: React.FC = () => {
+  const [darkMode, setDarkMode] = useLocalStorage<boolean>('isDarkModeOpen', false)
+  console.log(darkMode)
   const [server, setServer] = useState<null | serverData>(null)
   useEffect(()=>{
     fetch('http://localhost:8000/data')
@@ -20,14 +23,19 @@ const App: React.FC = () => {
   },[])
   return (
     <>
-      <Navbar />
+      <Navbar
+      setDarkMode = {setDarkMode}
+      darkMode = {darkMode}
+      />
       <Routes>
-        <Route path='/' element={server && <Home server={server} setServer={setServer} />} />
+        <Route path='/' element={server && <Home darkMode = {darkMode} server={server} setServer={setServer} />} />
         <Route path='/about' element={<About />} />
         <Route path='/shop' element={<Shop />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
-      <Footer />
+      {
+        server && <Footer darkMode = {darkMode}/>
+      }
     </>
   );
 }

@@ -1,0 +1,23 @@
+$darkModeBGColor: #1F2937;
+$darkModeTransition: 500ms;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+#root{
+    position: relative;
+    overflow-x: hidden;
+}
+.navbar-toggler{
+    transition: 600ms;
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 40;
+}

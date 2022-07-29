@@ -18,6 +18,10 @@ export interface serverData {
 export interface HomeProps {
     server: serverData
     setServer: React.Dispatch<React.SetStateAction<serverData | null>>
+    darkMode: boolean
+}
+export interface AdvertisementProps {
+    darkMode: boolean
 }
 export interface ProductTypesProps {
     server: serverData
@@ -25,6 +29,7 @@ export interface ProductTypesProps {
     activeBox: number
     setActiveBox: React.Dispatch<React.SetStateAction<number>>
     handleTypeBoxClick: (el: string, index: number) => void
+    darkMode: boolean
 }
 export interface BestSellerProps {
     server: serverData | any
@@ -32,8 +37,24 @@ export interface BestSellerProps {
     activeBox: number
     componentType: string
     style: animation
+    darkMode: boolean
+}
+export interface SoapsProps {
+    darkMode: boolean
+}
+export interface CollectionProps {
+    darkMode: boolean
+}
+export interface NavbarProps {
+    darkMode: boolean
+    setDarkMode: React.Dispatch<React.SetStateAction<boolean>>
 }
 export interface MobileNavbarProps {
     isMobileNavOpen: boolean
     setIsMobileNavOpen: React.Dispatch<React.SetStateAction<boolean>>
+    darkMode: boolean
+    setDarkMode: React.Dispatch<React.SetStateAction<boolean>>
+}
+export interface FooterProps {
+    darkMode: boolean
 }

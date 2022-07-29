@@ -11,12 +11,67 @@
   font-family: SF-pro-display-bold;
   src: url(../assets/fonts/SFPRODISPLAYBOLD.OTF);
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.navbar-toggler {
+  transition: 600ms;
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.navbar-toggler {
+  transition: 600ms;
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 40;
+}
+
 .footer {
   padding: 1.5rem;
   width: 100%;
   position: relative;
   background-color: #F3F4F6;
-  margin-top: 4rem;
+  transition: 500ms;
+}
+.footer.dark {
+  background-color: #1F2937;
+}
+.footer.dark .footer--logo strong {
+  transition: 500ms;
+  color: #fff;
+}
+.footer.dark .footer__flex .links-container .links a {
+  transition: 500ms;
+}
+.footer.dark .footer__flex .links-container .links a:hover {
+  color: #fff;
 }
 .footer--logo {
   position: absolute;

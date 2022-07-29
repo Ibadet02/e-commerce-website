@@ -1,11 +1,26 @@
 @import './mixins.scss';
+@import '../App.scss';
 $footerPadding: 1.5rem;
 .footer{
     padding: $footerPadding;
     width: 100%;
     position: relative;
     background-color: #F3F4F6;
-    margin-top: 4rem;
+    // margin-top: 4rem;
+    transition: $darkModeTransition;
+    &.dark{
+        background-color: $darkModeBGColor;
+        .footer--logo strong{
+            transition: $darkModeTransition;
+            color: #fff;
+        }
+        .footer__flex .links-container .links a{
+            transition: $darkModeTransition;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
     &--logo{
         position: absolute;
         top: $footerPadding;

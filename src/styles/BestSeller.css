@@ -12,6 +12,27 @@
   font-family: SF-pro-display-bold;
   src: url(../assets/fonts/SFPRODISPLAYBOLD.OTF);
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.navbar-toggler {
+  transition: 600ms;
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 40;
+}
+
 @font-face {
   font-family: SF-pro-rounded;
   src: url(../assets/fonts/SF-pro-rounded.ttf);
@@ -74,6 +95,24 @@
   border-radius: 8px;
 }
 .bestseller__flex--left div a:hover {
+  color: #fff;
+  background-color: #42a163;
+}
+.bestseller__flex--left div a.dark {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  width: 17.125em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background, color 300ms;
+  color: #fff;
+  background-color: #5FD788;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.bestseller__flex--left div a.dark:hover {
   color: #5FD788;
   background-color: #fff;
 }

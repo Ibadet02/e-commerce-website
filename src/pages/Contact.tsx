@@ -1,7 +1,7 @@
 import React from 'react'
-
+import '../styles/Contact.css'
 export const Contact = () => {
   return (
-    <section>Contact</section>
+    <section className='contact'>Contact</section>
   )
 }

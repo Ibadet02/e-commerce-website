@@ -1,4 +1,5 @@
 @import './Navbar.scss';
+@import './mixins.scss';
 .mobile-navbar{
     margin-top: $navbarHeight;
     display: none;
@@ -6,12 +7,97 @@
     position: fixed;
     top: 0;
     right: -100%;
-    width: 15em;
+    width: 16em;
     height: 100vh;
-    background-color: aqua;
+    background-color: #fff;
     transition: right 300ms;
     z-index: 100;
+    padding: 1em;
     &.active{
         right: 0;
+    }
+    &__flex{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        .mobile-tools{
+            display: flex;
+            flex-direction: column;
+            gap: 3em;
+            // border-bottom: 1px solid black;
+            // padding-bottom: 1em;
+            &--top{
+                display: flex;
+                justify-content: space-between;
+                a{
+                    
+                }
+                .toggle-dark{
+                    width: 2rem;
+                    height: 1.1rem;
+                    background-color: $darkModeBGColor;
+                    // padding: .1rem;
+                    position: relative;
+                    cursor: pointer;
+                    border-radius: .5rem;
+                    transition: $darkModeTransition;
+                    border: 1px solid $darkModeBGColor;
+                    display: flex;
+                    align-items: center;
+                    &--circle{
+                        height: .8rem;
+                        width: .8rem;
+                        background-color: #FFF;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: .1rem;
+                        left: .1rem;
+                        transition: $darkModeTransition;
+                    }
+                    &.dark{
+                        background-color: white;
+                        .toggle-dark--circle{
+                            left: 1rem;
+                            background-color: $darkModeBGColor;
+                        }
+                    }
+                }
+
+            }
+            .mobile-search{
+                position: relative;
+                width: 100%;
+                &__input{
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    padding-right: 1.5em;
+                }
+                &__icon{
+                    top: 0;
+                    right: 0;
+                    position: absolute;
+                    cursor: pointer;
+                }
+            }
+
+        }
+        .mobile-links{
+            display: flex;
+            flex-direction: column;
+            a{
+                text-decoration: none;
+                padding: 2em 1em;
+                border-radius: 2em;
+                transition: background 300ms;
+                @include navbar();
+                &:hover{
+                    background-color: #eee;
+                }
+                &.active{
+                    color: #5FD788;
+                }
+            }
+        }
     }
 }

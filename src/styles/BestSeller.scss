@@ -26,7 +26,11 @@
                     @include bestseller-header();
                 }
                 a{
-                    @include defaulButton(#fff, #5FD788, #5FD788, #fff);
+                    @include defaulButton(#fff, #5FD788, #fff, #42a163);
+                    &.dark{
+                        @include defaulButton(#fff, #5FD788, #5FD788, #fff);
+
+                    }
                 }
             }
         }
