@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/e-commerce-website/static/css/main.2cfd75e1.css",
+    "main.js": "/e-commerce-website/static/js/main.0408039f.js",
+    "static/media/SF-pro-rounded.ttf": "/e-commerce-website/static/media/SF-pro-rounded.1eeaf1332ceeea5b68db.ttf",
+    "static/media/soaps.png": "/e-commerce-website/static/media/soaps.f0e1632594f605ac5287.png",
+    "static/media/pharmacy.svg": "/e-commerce-website/static/media/pharmacy.788e68364f287d5f5269e9f0e06ff434.svg",
+    "static/media/SFPRODISPLAYBOLD.OTF": "/e-commerce-website/static/media/SFPRODISPLAYBOLD.b1f4d2c69fa808ebca12.OTF",
+    "static/media/SFPRODISPLAYREGULAR.OTF": "/e-commerce-website/static/media/SFPRODISPLAYREGULAR.d1f5e6e16dd4f75c3950.OTF",
+    "static/media/creams.svg": "/e-commerce-website/static/media/creams.24427c2df94c27a2f9dd.svg",
+    "static/media/flower.svg": "/e-commerce-website/static/media/flower.fa85692b8209dcc2fec7.svg",
+    "static/media/logo.svg": "/e-commerce-website/static/media/logo.0e663cddef8292aa3094bd3b851b4155.svg",
+    "index.html": "/e-commerce-website/index.html",
+    "static/media/Blob.svg": "/e-commerce-website/static/media/Blob.8c8b337900311abb727c.svg",
+    "static/media/green-hole.svg": "/e-commerce-website/static/media/green-hole.bcabfa588a84c3497828.svg",
+    "main.2cfd75e1.css.map": "/e-commerce-website/static/css/main.2cfd75e1.css.map",
+    "main.0408039f.js.map": "/e-commerce-website/static/js/main.0408039f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cfd75e1.css",
+    "static/js/main.0408039f.js"
+  ]
+}
