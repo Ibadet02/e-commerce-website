@@ -48,12 +48,16 @@ export const BestSeller = ({server, setServer, activeBox, componentType, style, 
                 {
                     server[Object.keys(server)[activeBox]].filter((e: any) => e[componentType])
                     .map((el: productData, index: number)=>{
+                        console.log(el.img)
                         return (
                             <SwiperSlide key={index}>
                                 <div className='bestseller-box'>
                                     <img
+                                    src={el.img}
                                     style={style.image}
-                                    className='bestseller-box--img skeleton skeleton-img' src="https://source.unsplash.com/random" alt={el.name} />
+                                    className='bestseller-box--img skeleton skeleton-img'
+                                    alt={el.name}
+                                    />
                                     <div className='bestseller-box--blur'>
                                         <div className='blur-top'>
                                             <span

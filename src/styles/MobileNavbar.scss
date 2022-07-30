@@ -1,5 +1,6 @@
 @import './Navbar.scss';
 @import './mixins.scss';
+@import '../App.scss';
 .mobile-navbar{
     margin-top: $navbarHeight;
     display: none;
@@ -8,11 +9,31 @@
     top: 0;
     right: -100%;
     width: 16em;
-    height: 100vh;
+    height: 100%;
     background-color: #fff;
-    transition: right 300ms;
+    transition: $darkModeTransition;
     z-index: 100;
     padding: 1em;
+    &.dark{
+        background-color: $darkModeBGColor;
+        .mobile-navbar__flex{
+            .mobile-tools .mobile-tools--top a svg path{
+                fill: #fff;
+            }
+            .mobile-links a{
+                color: #fff;
+                &.active{
+                    color: #5FD788;
+                    &:hover{
+                        color: #5FD788;
+                    }
+                }
+                &:hover{
+                    color: $darkModeBGColor;
+                }
+            }
+        }
+    }
     &.active{
         right: 0;
     }
@@ -24,13 +45,11 @@
             display: flex;
             flex-direction: column;
             gap: 3em;
-            // border-bottom: 1px solid black;
-            // padding-bottom: 1em;
             &--top{
                 display: flex;
                 justify-content: space-between;
-                a{
-                    
+                a svg path{
+                    transition: $darkModeTransition;
                 }
                 .toggle-dark{
                     width: 2rem;
@@ -71,12 +90,18 @@
                     border: none;
                     outline: none;
                     width: 100%;
-                    padding-right: 1.5em;
+                    padding: 1em;
+                    padding-right: 1.8em;
+                    border-radius: 5rem;
                 }
-                &__icon{
+                div{
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
                     top: 0;
                     right: 0;
                     position: absolute;
+                    padding: 0 .5em;
                     cursor: pointer;
                 }
             }

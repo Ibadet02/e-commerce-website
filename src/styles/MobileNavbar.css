@@ -27,7 +27,7 @@
   transition: 600ms;
   display: none;
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 40;
@@ -48,7 +48,7 @@
   transition: 600ms;
   display: none;
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 40;
@@ -215,6 +215,9 @@
   display: none;
   cursor: pointer;
 }
+.navbar__flex .menuBar-container.dark svg {
+  fill: #fff;
+}
 
 @font-face {
   font-family: SF-pro-rounded;
@@ -243,7 +246,28 @@
   transition: 600ms;
   display: none;
   position: fixed;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.navbar-toggler {
+  transition: 600ms;
+  display: none;
+  position: fixed;
+  height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 40;
@@ -257,11 +281,29 @@
   top: 0;
   right: -100%;
   width: 16em;
-  height: 100vh;
+  height: 100%;
   background-color: #fff;
-  transition: right 300ms;
+  transition: 500ms;
   z-index: 100;
   padding: 1em;
+}
+.mobile-navbar.dark {
+  background-color: #1F2937;
+}
+.mobile-navbar.dark .mobile-navbar__flex .mobile-tools .mobile-tools--top a svg path {
+  fill: #fff;
+}
+.mobile-navbar.dark .mobile-navbar__flex .mobile-links a {
+  color: #fff;
+}
+.mobile-navbar.dark .mobile-navbar__flex .mobile-links a.active {
+  color: #5FD788;
+}
+.mobile-navbar.dark .mobile-navbar__flex .mobile-links a.active:hover {
+  color: #5FD788;
+}
+.mobile-navbar.dark .mobile-navbar__flex .mobile-links a:hover {
+  color: #1F2937;
 }
 .mobile-navbar.active {
   right: 0;
@@ -279,6 +321,9 @@
 .mobile-navbar__flex .mobile-tools--top {
   display: flex;
   justify-content: space-between;
+}
+.mobile-navbar__flex .mobile-tools--top a svg path {
+  transition: 500ms;
 }
 .mobile-navbar__flex .mobile-tools--top .toggle-dark {
   width: 2rem;
@@ -317,12 +362,18 @@
   border: none;
   outline: none;
   width: 100%;
-  padding-right: 1.5em;
+  padding: 1em;
+  padding-right: 1.8em;
+  border-radius: 5rem;
 }
-.mobile-navbar__flex .mobile-tools .mobile-search__icon {
+.mobile-navbar__flex .mobile-tools .mobile-search div {
+  display: flex;
+  align-items: center;
+  height: 100%;
   top: 0;
   right: 0;
   position: absolute;
+  padding: 0 0.5em;
   cursor: pointer;
 }
 .mobile-navbar__flex .mobile-links {
