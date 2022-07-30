@@ -15,7 +15,7 @@ const App: React.FC = () => {
   console.log(darkMode)
   const [server, setServer] = useState<null | serverData>(null)
   useEffect(()=>{
-    fetch('http://localhost:8000/data')
+    fetch("https://github.com/Ibadet02/e-commerce-website/blob/'main'/data")
     .then(res=>res.json())
     .then(data=>{
       setServer(data)
