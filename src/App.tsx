@@ -29,13 +29,13 @@ const App: React.FC = () => {
       darkMode = {darkMode}
       />
       <Routes>
-        <Route path='/' element={server && <Home darkMode = {darkMode} server={server} setServer={setServer} />} />
+        {/* <Route path='/' element={server && <Home darkMode = {darkMode} server={server} setServer={setServer} />} /> */}
         <Route path='/about' element={<About />} />
         <Route path='/shop' element={<Shop />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
       {
-        server && <Footer darkMode = {darkMode}/>
+        // server && <Footer darkMode = {darkMode}/>
       }
     </>
   );
