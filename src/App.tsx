@@ -29,10 +29,10 @@ const App: React.FC = () => {
       darkMode = {darkMode}
       />
       <Routes>
-        <Route path='/' element={server && <Home darkMode = {darkMode} server={server} setServer={setServer} />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/shop' element={<Shop />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/e-commerce-website/' element={server && <Home darkMode = {darkMode} server={server} setServer={setServer} />} />
+        <Route path='/e-commerce-website/about' element={<About />} />
+        <Route path='/e-commerce-website/shop' element={<Shop />} />
+        <Route path='/e-commerce-website/contact' element={<Contact />} />
       </Routes>
       {
         server && <Footer darkMode = {darkMode}/>

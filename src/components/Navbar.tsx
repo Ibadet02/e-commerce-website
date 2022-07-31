@@ -20,10 +20,10 @@ export const Navbar = ({darkMode, setDarkMode}:NavbarProps) => {
                     </NavLink>
                 </div>
                 <div className="links-container">
-                    <NavLink to={'/'}>Home</NavLink>
-                    <NavLink to={'/about'}>About Us</NavLink>
-                    <NavLink to={'/shop'}>Shop</NavLink>
-                    <NavLink to={'/contact'}>Contact</NavLink>
+                    <NavLink to={'/e-commerce-website/'}>Home</NavLink>
+                    <NavLink to={'/e-commerce-website/about'}>About Us</NavLink>
+                    <NavLink to={'/e-commerce-website/shop'}>Shop</NavLink>
+                    <NavLink to={'/e-commerce-website/contact'}>Contact</NavLink>
                 </div>
                 <div className="icons-container">
                     <NavLink to={'/'} className='icons-container__bag'>
