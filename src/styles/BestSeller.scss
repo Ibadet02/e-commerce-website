@@ -103,8 +103,6 @@
                             max-width: 22rem;
                             max-height: 4.25rem;
                             overflow-y: auto;
-                            display: flex;
-                            align-items: center;
                             @include bestseller-box(400, 0.875rem, #6B7280);
                             border-radius: .7rem;
                             user-select: none;
