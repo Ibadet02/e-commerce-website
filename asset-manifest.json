@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/e-commerce-website/static/css/main.a7d91c67.css",
-    "main.js": "/e-commerce-website/static/js/main.b1be15ce.js",
+    "main.js": "/e-commerce-website/static/js/main.6b9c5925.js",
     "static/media/SF-pro-rounded.ttf": "/e-commerce-website/static/media/SF-pro-rounded.1eeaf1332ceeea5b68db.ttf",
     "static/media/soaps.png": "/e-commerce-website/static/media/soaps.f0e1632594f605ac5287.png",
     "static/media/pharmacy.svg": "/e-commerce-website/static/media/pharmacy.788e68364f287d5f5269e9f0e06ff434.svg",
@@ -14,10 +14,10 @@
     "static/media/Blob.svg": "/e-commerce-website/static/media/Blob.8c8b337900311abb727c.svg",
     "static/media/green-hole.svg": "/e-commerce-website/static/media/green-hole.bcabfa588a84c3497828.svg",
     "main.a7d91c67.css.map": "/e-commerce-website/static/css/main.a7d91c67.css.map",
-    "main.b1be15ce.js.map": "/e-commerce-website/static/js/main.b1be15ce.js.map"
+    "main.6b9c5925.js.map": "/e-commerce-website/static/js/main.6b9c5925.js.map"
   },
   "entrypoints": [
     "static/css/main.a7d91c67.css",
-    "static/js/main.b1be15ce.js"
+    "static/js/main.6b9c5925.js"
   ]
 }
