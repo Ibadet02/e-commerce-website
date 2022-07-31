@@ -1,4 +1,5 @@
 import { useLocalStorage } from './localStorage/useLocalStorge';
+import Data from './d.json'
 import { useEffect, useState } from 'react';
 import { Routes, Route } from'react-router-dom'
 import { serverData } from './interfaces';
@@ -12,14 +13,14 @@ import './App.css';
 import './styles/responsive.css'
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useLocalStorage<boolean>('isDarkModeOpen', false)
-  console.log(darkMode)
   const [server, setServer] = useState<null | serverData>(null)
   useEffect(()=>{
-    fetch("https://github.com/Ibadet02/e-commerce-website/blob/'main'/data")
-    .then(res=>res.json())
-    .then(data=>{
-      setServer(data)
-    })
+    setServer(Data.data)
+    // fetch("https://github.com/Ibadet02/e-commerce-website/tree/'main'/data")
+    // .then(res=>res.json())
+    // .then(data=>{
+    //   setServer(data)
+    // })
   },[])
   return (
     <>

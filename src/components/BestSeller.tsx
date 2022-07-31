@@ -42,13 +42,10 @@ export const BestSeller = ({server, setServer, activeBox, componentType, style, 
             <Swiper
             spaceBetween={20}
             slidesPerView={slidesPerView}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
             >
                 {
                     server[Object.keys(server)[activeBox]].filter((e: any) => e[componentType])
                     .map((el: productData, index: number)=>{
-                        console.log(el.img)
                         return (
                             <SwiperSlide key={index}>
                                 <div className='bestseller-box'>
